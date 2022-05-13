@@ -5,9 +5,9 @@
 Under GNU General Public License
 ## Modifications 
 * Modified cpu_map 
-- Reverse step and direction pin mask to enable the usage of the problematic [CNC Shield V4](https://www.instructables.com/Fix-Cloned-Arduino-NANO-CNC-Shield/)
+   - Reverse step and direction pin mask to enable the usage of the problematic [CNC Shield V4](https://www.instructables.com/Fix-Cloned-Arduino-NANO-CNC-Shield/)
 * Modified config.h
-- Enabled CoreXY Kinematics 
+   - Enabled CoreXY Kinematics 
 * Deleted Collant control and Z Probe function in order to reduce code size to compile for Nano
 
 ## Version History
