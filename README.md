@@ -1,9 +1,9 @@
 # Hardware
-##Modified GRBL 
+## Modified GRBL 
 - Version 1.1h
 - Build 20190825
 Under GNU General Public License
-##Modifications 
+## Modifications 
 * Modified cpu_map 
 - Reverse step and direction pin mask to enable the usage of the problematic [CNC Shield V4](https://www.instructables.com/Fix-Cloned-Arduino-NANO-CNC-Shield/)
 * Modified config.h
