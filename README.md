@@ -9,6 +9,7 @@ Under GNU General Public License
 * Modified config.h
    - Enabled CoreXY Kinematics 
 * Deleted Collant control and Z Probe function in order to reduce code size to compile for Nano
+* Activated two axis kinematics and enabled limit switches and homing sequence 
 
 ## Version History
 
@@ -16,6 +17,8 @@ Under GNU General Public License
 * 0.1 pre Alpha Prototype
     * 13.05.2022 Update 0.1.1 
     	- Initial Upload of modified GRBL Source file [Zhang]
+    * 20.05.2022 Update 0.1.2 
+    	- Configured Corexy Kinematics and activated limit switches and homing sequence 
 
 
 ## Documentation and further readings 
