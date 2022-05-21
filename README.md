@@ -18,7 +18,7 @@ Under GNU General Public License
     * 13.05.2022 Update 0.1.1 
     	- Initial Upload of modified GRBL Source file [Zhang]
     * 20.05.2022 Update 0.1.2 
-    	- Configured Corexy Kinematics and activated limit switches and homing sequence 
+    	- Configured Corexy Kinematics and activated limit switches and homing sequence [Zhang]
 
 
 ## Documentation and further readings 
