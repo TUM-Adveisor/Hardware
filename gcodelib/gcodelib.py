@@ -36,6 +36,9 @@ class Connection:
         while self._status != "Idle":
             time.sleep(0.01)
 
+    def spindle_to_low(self):
+        self._serial.write(("$31 = 0\n").encode("ascii", "ignore"))
+
     def wait_for_movement_start(self):
         while self._status != "Run":
             time.sleep(0.01)
@@ -45,9 +48,17 @@ class Connection:
 
     def send_coords(self, x, y):
         self._serial.write((self.get_move_gcode(x, y)+"\n").encode("ascii", "ignore"))
+    
     def home(self):
+        self._serial.write(("$31 = 0\n").encode("ascii", "ignore"))
         self._serial.write(("$H\n").encode("ascii", "ignore"))
-
+    
+    def magnet_control(self,boolean):
+        if boolean:
+            self._serial.write(("M3\n").encode("ascii", "ignore"))
+        else:
+            self._serial.write(("M5\n").encode("ascii", "ignore"))
+    
     def _send_instruction(self, instr):
         self._serial.write((instr + "\n").encode("ascii", "ignore"))
 
